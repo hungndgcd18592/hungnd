@@ -70,6 +70,7 @@ $stmt = $pdo->prepare($sql);
     }
  }
     if (isset($_POST['form_click'])){
+                    echo '<br/>';
                     echo 'Tên đăng nhập là: ' . $_POST['id'];
                     echo '<br/>';
                     echo 'Mật khẩu là: ' . $_POST['name'];
