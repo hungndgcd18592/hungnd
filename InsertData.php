@@ -44,12 +44,6 @@ ec2-52-202-146-43.compute-1.amazonaws.com
 if($pdo === false){
      echo "ERROR: Could not connect Database";
 }
-try {
-$pdo->setattribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-echo "Connected successfully";
-} catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-}
 
 $sql = "INSERT INTO product(id, name, price)"
         . " VALUES('$_POST[id]','$_POST[name]','$_POST[price]'";
