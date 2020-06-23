@@ -44,16 +44,13 @@ ec2-52-202-146-43.compute-1.amazonaws.com
 if($pdo === false){
      echo "ERROR: Could not connect Database";
 }
+try {
+$pdo->setattribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+echo "Connected successfully";
+} catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
 
-//Khởi tạo Prepared Statement
-//$stmt = $pdo->prepare('INSERT INTO student (stuid, fname, email, classname) values (:id, :name, :email, :class)');
-
-//$stmt->bindParam(':id','SV03');
-//$stmt->bindParam(':name','Ho Hong Linh');
-//$stmt->bindParam(':email', 'Linhhh@fpt.edu.vn');
-//$stmt->bindParam(':class', 'GCD018');
-//$stmt->execute();
-//$sql = "INSERT INTO student(stuid, fname, email, classname) VALUES('SV02', 'Hong Thanh','thanhh@fpt.edu.vn','GCD018')";
 $sql = "INSERT INTO product(id, name, price)"
         . " VALUES('$_POST[id]','$_POST[name]','$_POST[price]'";
 $stmt = $pdo->prepare($sql);
