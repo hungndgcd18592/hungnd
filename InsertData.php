@@ -17,7 +17,7 @@ list-style: none;
 <li>ID:</li><li><input type="text" name="customerid" /></li>
 <li>Name:</li><li><input type="text" name="customername" /></li>
 <li>Price:</li><li><input type="text" name="address" /></li>
-<li><input type="submit" value="Submit" /></li>
+<li><input type="submit" name="form_click" value="Submit" /></li>
 </form>
 </ul>
 
@@ -69,6 +69,11 @@ $stmt = $pdo->prepare($sql);
         echo "Error inserting record: ";
     }
  }
+    if (isset($_POST['form_click'])){
+                    echo 'Tên đăng nhập là: ' . $_POST['id'];
+                    echo '<br/>';
+                    echo 'Mật khẩu là: ' . $_POST['name'];
+                }
 ?>
 </body>
 </html>
