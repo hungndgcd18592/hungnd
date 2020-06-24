@@ -46,7 +46,7 @@ if($pdo === false){
 }
 
 $sql = "INSERT INTO product(id, name, price)"
-        . " VALUES('$_POST[id]','$_POST[name]','$_POST[price]'";
+        . " VALUES('$_POST[id]','$_POST[name]','$_POST[price]')";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
  if (is_null($_POST[id])) {
@@ -60,11 +60,6 @@ $stmt = $pdo->prepare($sql);
         echo "Error inserting record: ";
     }
  }
-    if (isset($_POST['form_click'])){
-                    echo '<br/>';
-                    echo 'Tên đăng nhập là: ' . $_POST['id'];
-                    echo '<br/>';
-                    echo 'Mật khẩu là: ' . $_POST['name'];
                 }
 ?>
 </body>
