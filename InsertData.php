@@ -60,7 +60,7 @@ $stmt = $pdo->prepare($sql);
         echo "Error inserting record: ";
     }
  }
-                }
+               
 ?>
 </body>
 </html>
