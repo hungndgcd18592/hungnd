@@ -9,8 +9,10 @@
 ini_set('display_errors', 1);
 echo "Hello Cloud Computing class 0705!";
 ?>
+    <form name="SelectData" action="ConnectToDB.php" method="GET" >
     <input type="text" placeholder="Search..." name="Search">
     <input type="submit" name="form_click" value="Submit" />
+    </form>
 <?php
 
 
