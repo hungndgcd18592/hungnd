@@ -10,7 +10,7 @@ ini_set('display_errors', 1);
 echo "Hello Cloud Computing class 0705!";
 ?>
     <input type="text" placeholder="Search..." name="Search">
-    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="submit" name="form_click" value="Submit" />
 <?php
 
 
