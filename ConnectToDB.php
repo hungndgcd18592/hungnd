@@ -3,6 +3,7 @@
 <body>
 
 <h1>DATABASE CONNECTION</h1>
+    <input type="text" placeholder="Search..." name="Search">
 
 <?php
 ini_set('display_errors', 1);
