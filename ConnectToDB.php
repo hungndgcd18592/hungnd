@@ -3,13 +3,14 @@
 <body>
 
 <h1>DATABASE CONNECTION</h1>
-    <input type="text" placeholder="Search..." name="Search">
+
 
 <?php
 ini_set('display_errors', 1);
 echo "Hello Cloud Computing class 0705!";
 ?>
-
+    <input type="text" placeholder="Search..." name="Search">
+    <li><button type="submit"><i class="fa fa-search"></i></button></li>
 <?php
 
 
