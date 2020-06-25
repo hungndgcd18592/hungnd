@@ -9,7 +9,7 @@
 ini_set('display_errors', 1);
 echo "Hello Cloud Computing class 0705!";
 ?>
-    <form name="SelectData" action="ConnectToDB.php" method="GET" >
+    <form name="SelectData" action="ConnectToDB.php" method="POST" >
     <input type="text" placeholder="Search..." name="Search">
     <input type="submit" name="form_click" value="Submit" />
     </form>
@@ -42,7 +42,7 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 echo '<p>product information:</p>';
-    $sql = "SELECT * FROM product WHERE [$_GET[id]";
+    $sql = "SELECT * FROM product WHERE id=[$_POST[id]";
 
 ?>
 <div id="container">
