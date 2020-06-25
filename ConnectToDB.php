@@ -42,6 +42,7 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 echo '<p>product information:</p>';
+    $sql = "SELECT * FROM product WHERE [$_GET[id]";
 
 ?>
 <div id="container">
