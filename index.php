@@ -16,7 +16,7 @@
   <link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/styleforall.css" rel="stylesheet">
-  <title>Fashion Store Home</title>
+  <title>ATN Store Home</title>
 </head>
 
 <body>
@@ -107,7 +107,7 @@
           <li><a href="InsertData.php" title="">Insert</a></li>
           <li><a href="UpdateData.php" title="">Update</a></li>
           <li><a href="DeleteData.php" title="">Delete</a></li>
-	  <li><a href="login.html" title="">Login</a></li>	 
+	  <li><a href="#" title="">Login</a></li>	 
         </ul>
       </div>
     </div>
