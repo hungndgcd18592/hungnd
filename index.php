@@ -69,7 +69,7 @@
        
        <div class="col-12 col-xl-7">
          <div class="company_area text-center">
-          <div class="company_name text-border">FASHION STORE <span style="color:#fff200">IN DA NANG</span></div>
+          <div class="company_name text-border">ATN Store <span style="color:#fff200">IN DA NANG</span></div>
           <div class="company_add">Address: 658 Ngo Quyen, Son Tra District, Da Nang City</div>
           <div class="company_alt">- 25% OFF EVERYTHING -</div>
         </div>
@@ -101,17 +101,13 @@
     <div class="row">
       <div class="col-12">
         <ul class="menu__main">
-          <li><a href="index.html" title="">Home</a></li>
-          <li><a href="women.html" title="">Women</a></li>
-          <li><a href="men.html" title="">Men</a></li>
-          <li><a href="login.html" title="">Login</a></li>
           <input type="text" placeholder="Search..." name="Search">
           <li><button type="submit"><i class="fa fa-search"></i></button></li>
           <li><a href="ConnectToDB.php" title="">View</a></li>
           <li><a href="InsertData.php" title="">Insert</a></li>
           <li><a href="UpdateData.php" title="">Update</a></li>
           <li><a href="DeleteData.php" title="">Delete</a></li>
-		 
+	  <li><a href="login.html" title="">Login</a></li>	 
         </ul>
       </div>
     </div>
