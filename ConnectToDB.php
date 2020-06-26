@@ -2,16 +2,14 @@
 <html>
 <body>
 
-<h1>DATABASE CONNECTION</h1>
+<h1>DATABASE OF STORE</h1>
 
 
 <?php
 ini_set('display_errors', 1);
-echo "Hello Cloud Computing class 0705!";
+echo "Information of the product is listed below!";
 ?>
     <form name="SelectData" action="ConnectToDB.php" method="POST" >
-    <input type="text" placeholder="Search..." name="Search">
-    <input type="submit" name="form_click" value="Submit" />
     </form>
 <?php
 
@@ -42,7 +40,6 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
 echo '<p>product information:</p>';
-    $sql = "SELECT * FROM product WHERE id=[$_POST[id]";
 
 ?>
 <div id="container">
